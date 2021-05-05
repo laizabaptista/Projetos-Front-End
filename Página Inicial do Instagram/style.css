@@ -1,0 +1,131 @@
+*{
+ padding: 0;
+ margin: 0;
+ text-decoration: none;
+ box-sizing: border-box;
+ font-family: sans-serif;
+ font-size: 14px;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 242,242);
+}
+.instagram-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+.instagram-phone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+.instagram-phone img{
+    height: 50rem;
+}
+.instagram-continue{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+.group{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px;
+    border:1px solid lightgrey;
+    margin: 0 0 10px 0;
+
+}
+.instagram-logo{
+    height: 3rem;
+}
+.foto-perfil{
+    border-radius: 100px;
+    height: 15vh;
+    margin: 20px;
+    overflow: hidden;
+}
+.links{
+    font-weight: bold;
+    color:#0095f6;
+}
+.continuar{
+    margin: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #0095f6;
+    padding: 8px;
+    border-radius: 5px;
+}
+.group p{
+    padding: 1em;
+}
+.group2{
+    margin: 5px 0 5px 0;
+    text-align: center;
+    justify-content: space-between;
+    width: 100%;
+    display: inline;
+}
+.download{
+    display: inline;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5px ;
+    text-align: center;
+}
+.download img {
+    height: 3em; 
+   }
+
+footer{
+    position: absolute;
+     display: inline-block;
+    text-align: center;
+    top: 100%;
+    right: 25%;
+   }
+footer a{
+    justify-content: space-between;
+    color: grey;
+    padding: 7px;
+    font-size: 11px;
+}
+footer p{
+    color: grey;
+    font-size: 12px;
+    margin: 1em;
+
+}
+/* Media Queries */
+
+@media (max-width:1024px) {
+    .instagram-wrapper{
+        width: 90%;
+    }
+}
+@media (max-width:650px) {
+    .instagram-wrapper{
+        width: 90%;
+    }
+    .instagram-phone{
+        display: none;
+    }
+}
