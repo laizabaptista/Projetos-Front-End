@@ -1,0 +1,100 @@
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url('/style/fonts/BebasNeue-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Base */
+
+body{
+    background: var(--preto);
+    font-family: 'Calibri', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header .logo{
+    font-family: 'Bebas';
+    color: var(--vermelho);
+    font-size: 45px;
+    text-shadow: 1px 1px white;
+}
+
+header nav a{
+    color: #AAA;
+    margin-right: 10px;
+    font-weight: bold;
+}
+header nav a:hover{
+    color: #fff;
+}
+
+/*Filme principal*/
+.fundo{
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),url('/img/grease.jpg');
+    background-position: center;
+    height: 500px;
+    background-size: cover;
+}
+.filme-principal{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.container{
+    margin-left: 20px;
+}  
+
+.filme-principal .descricao{
+    margin-bottom: 3px;
+    width: 60%;
+}
+.titulo{
+    margin-top: 20%;
+    font-size: 40px;
+    width: 60%;
+}
+.botao {
+    border: none;
+    background-color:rgba(0,0,0,.50);
+    color: white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+}
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: 1s ease all;
+}
+.botao i{
+    margin-right: 8px;
+}
+.carrosel{
+    margin-top: 2px;
+}
+.carrosel h3{
+    margin: 10px 10px;
+}
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
